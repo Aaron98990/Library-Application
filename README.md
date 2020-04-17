@@ -1,20 +1,20 @@
 # High-School-Library-Application
 Using C#, this prototype includes many features including check out, email reminders, and much more. 
 
-Sleak Navigation. Get to Books and Users by letter. Also, filter and order queries by the way you want.
+Sleak Navigation. <br />
 ![LL](QuiickLink.png)
 
-Easy Login.
+Easy Login. <br />
 ![LL](Login.PNG)
 
-Clear interface.
+Clear interface. <br />
 ![Screenshot1](main.PNG)
 
-Fast Administrative Access.
+Fast Administrative Access. <br />
 ![Screenshot](EditDepartments.PNG)
 
-Highly detailed User Profiles.
+Highly detailed User Profiles. <br />
 ![Screenshot](User.PNG)
 
-Check out is a breeze.
+Check out is a breeze. <br />
 ![Screenshot](Check-Out.PNG)
