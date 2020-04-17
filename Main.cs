@@ -19,6 +19,7 @@ namespace LibraryApp
         public SupportingClass SupportingClassForm;
         public Undelete UndeleteForm;
         public Search SearchForm;
+        public Login LoginForm;
 
         public String UserName = "thicks";
         public long Password = 12345;
@@ -52,6 +53,8 @@ namespace LibraryApp
             SearchForm.Location = new Point(300, 200);
         }
 
+
+
         //--------------------------------------------------------------------------------
         //---------------------- Aaron's Initializtion Utilities -----------------------
         #region ----Main--Main_Load--MyRenderer--MyColors--CreateParams ------------------
@@ -63,6 +66,8 @@ namespace LibraryApp
             InitializeComponent();
             UserForm = new User(this);
             UserForm.MdiParent = this;
+            LoginForm = new Login(this);
+            LoginForm.MdiParent = this;
             menuStrip1.Renderer = new MyRenderer();
         }
 
@@ -118,12 +123,127 @@ namespace LibraryApp
 
         private void LoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            LoginForm.Show();
         }
 
         public static implicit operator Main(SearchSelect v)
         {
             throw new NotImplementedException();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_7(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbMale_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbFemale_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChAdministrator_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chAdministrator_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CbDeptID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CbDeptID_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCellPhone_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtAdministrator_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
 
 

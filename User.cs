@@ -797,15 +797,15 @@ String Note4 = "", String Note5 = "")
             {
                 lbTrace.Hide();
                 btnTest.Hide();
-                this.Width = 969;
-                this.Height = 534;
+                this.Width = 1000;
+                this.Height = 700;
             }
             if (Testing == true)
             {
                 lbTrace.Show();
                 btnTest.Show();
                 this.Width = 1335;
-                this.Height = 534;
+                this.Height = 700;
             }
         }
         //===========================================================================//

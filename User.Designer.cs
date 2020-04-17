@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFirst = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,8 +66,6 @@
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.chAdministrator = new System.Windows.Forms.CheckBox();
             this.cbDeptID = new System.Windows.Forms.ComboBox();
-            this.btnCellPhone = new System.Windows.Forms.Button();
-            this.btnHomePhone = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
             this.Notes = new System.Windows.Forms.TabPage();
             this.txtID1 = new System.Windows.Forms.Label();
@@ -159,19 +157,12 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnPreviousRight = new System.Windows.Forms.Button();
-            this.btnNextRight = new System.Windows.Forms.Button();
-            this.btnLastRight = new System.Windows.Forms.Button();
-            this.btnFirstRight = new System.Windows.Forms.Button();
-            this.btnPreviousLeft = new System.Windows.Forms.Button();
-            this.btnNextLeft = new System.Windows.Forms.Button();
-            this.btnLastDown = new System.Windows.Forms.Button();
-            this.btnFirstLeft = new System.Windows.Forms.Button();
             this.pnlNavigation = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.cbSelect = new System.Windows.Forms.ComboBox();
             this.cbOrderBy = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbTrace = new System.Windows.Forms.ListBox();
             this.btnZ = new System.Windows.Forms.Button();
             this.btnY = new System.Windows.Forms.Button();
             this.btnX = new System.Windows.Forms.Button();
@@ -198,7 +189,16 @@
             this.btnC = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnA = new System.Windows.Forms.Button();
-            this.lbTrace = new System.Windows.Forms.ListBox();
+            this.btnPreviousRight = new System.Windows.Forms.Button();
+            this.btnNextRight = new System.Windows.Forms.Button();
+            this.btnLastRight = new System.Windows.Forms.Button();
+            this.btnFirstRight = new System.Windows.Forms.Button();
+            this.btnPreviousLeft = new System.Windows.Forms.Button();
+            this.btnNextLeft = new System.Windows.Forms.Button();
+            this.btnLastDown = new System.Windows.Forms.Button();
+            this.btnFirstLeft = new System.Windows.Forms.Button();
+            this.btnCellPhone = new System.Windows.Forms.Button();
+            this.btnHomePhone = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.PersonalInfo.SuspendLayout();
             this.Notes.SuspendLayout();
@@ -601,32 +601,6 @@
             this.cbDeptID.SelectedIndexChanged += new System.EventHandler(this.CbDeptID_SelectedIndexChanged);
             this.cbDeptID.Enter += new System.EventHandler(this.CbDeptID_Enter);
             // 
-            // btnCellPhone
-            // 
-            this.btnCellPhone.BackgroundImage = global::LibraryApp.Properties.Resources.phreal;
-            this.btnCellPhone.FlatAppearance.BorderSize = 0;
-            this.btnCellPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCellPhone.Location = new System.Drawing.Point(756, 151);
-            this.btnCellPhone.Name = "btnCellPhone";
-            this.btnCellPhone.Size = new System.Drawing.Size(29, 30);
-            this.btnCellPhone.TabIndex = 44;
-            this.toolTip1.SetToolTip(this.btnCellPhone, "Dialing Cell Phone");
-            this.btnCellPhone.UseVisualStyleBackColor = true;
-            this.btnCellPhone.Click += new System.EventHandler(this.BtnCellPhone_Click_1);
-            // 
-            // btnHomePhone
-            // 
-            this.btnHomePhone.BackgroundImage = global::LibraryApp.Properties.Resources.phreal;
-            this.btnHomePhone.FlatAppearance.BorderSize = 0;
-            this.btnHomePhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHomePhone.Location = new System.Drawing.Point(306, 153);
-            this.btnHomePhone.Name = "btnHomePhone";
-            this.btnHomePhone.Size = new System.Drawing.Size(29, 30);
-            this.btnHomePhone.TabIndex = 43;
-            this.toolTip1.SetToolTip(this.btnHomePhone, "Dialing Home Phone");
-            this.btnHomePhone.UseVisualStyleBackColor = true;
-            this.btnHomePhone.Click += new System.EventHandler(this.Button1_Click_2);
-            // 
             // btnTest
             // 
             this.btnTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(11)))), ((int)(((byte)(5)))));
@@ -907,14 +881,14 @@
             // 
             // dataGridView2
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1038,14 +1012,14 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserID,
@@ -1274,7 +1248,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ShowItemToolTips = true;
-            this.menuStrip1.Size = new System.Drawing.Size(1322, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1484, 24);
             this.menuStrip1.TabIndex = 43;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip1_ItemClicked);
@@ -1516,91 +1490,6 @@
             this.dataToolStripMenuItem.Text = "DATA";
             this.dataToolStripMenuItem.Click += new System.EventHandler(this.DataToolStripMenuItem_Click);
             // 
-            // btnPreviousRight
-            // 
-            this.btnPreviousRight.BackgroundImage = global::LibraryApp.Properties.Resources.previous1;
-            this.btnPreviousRight.Location = new System.Drawing.Point(809, 31);
-            this.btnPreviousRight.Name = "btnPreviousRight";
-            this.btnPreviousRight.Size = new System.Drawing.Size(31, 32);
-            this.btnPreviousRight.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.btnPreviousRight, "Navigate To The Previous Logical Record With The View");
-            this.btnPreviousRight.UseVisualStyleBackColor = true;
-            // 
-            // btnNextRight
-            // 
-            this.btnNextRight.BackgroundImage = global::LibraryApp.Properties.Resources.next;
-            this.btnNextRight.Location = new System.Drawing.Point(869, 31);
-            this.btnNextRight.Name = "btnNextRight";
-            this.btnNextRight.Size = new System.Drawing.Size(31, 32);
-            this.btnNextRight.TabIndex = 6;
-            this.toolTip1.SetToolTip(this.btnNextRight, "Navigate To The Next Logical Record With The View");
-            this.btnNextRight.UseVisualStyleBackColor = true;
-            this.btnNextRight.Click += new System.EventHandler(this.BtnNextRight_Click);
-            // 
-            // btnLastRight
-            // 
-            this.btnLastRight.BackgroundImage = global::LibraryApp.Properties.Resources.down;
-            this.btnLastRight.Location = new System.Drawing.Point(839, 59);
-            this.btnLastRight.Name = "btnLastRight";
-            this.btnLastRight.Size = new System.Drawing.Size(31, 32);
-            this.btnLastRight.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.btnLastRight, "Navigate To The Last Logical Record With The View");
-            this.btnLastRight.UseVisualStyleBackColor = true;
-            // 
-            // btnFirstRight
-            // 
-            this.btnFirstRight.BackgroundImage = global::LibraryApp.Properties.Resources.up;
-            this.btnFirstRight.Location = new System.Drawing.Point(839, 3);
-            this.btnFirstRight.Name = "btnFirstRight";
-            this.btnFirstRight.Size = new System.Drawing.Size(31, 32);
-            this.btnFirstRight.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.btnFirstRight, "Navigate To The First Logical Record With The View");
-            this.btnFirstRight.UseVisualStyleBackColor = true;
-            // 
-            // btnPreviousLeft
-            // 
-            this.btnPreviousLeft.BackgroundImage = global::LibraryApp.Properties.Resources.previous1;
-            this.btnPreviousLeft.Location = new System.Drawing.Point(5, 33);
-            this.btnPreviousLeft.Name = "btnPreviousLeft";
-            this.btnPreviousLeft.Size = new System.Drawing.Size(31, 32);
-            this.btnPreviousLeft.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.btnPreviousLeft, "Navigate to the Previous Logical Record With The View");
-            this.btnPreviousLeft.UseVisualStyleBackColor = true;
-            this.btnPreviousLeft.Click += new System.EventHandler(this.BtnPreviousLeft_Click);
-            // 
-            // btnNextLeft
-            // 
-            this.btnNextLeft.BackgroundImage = global::LibraryApp.Properties.Resources.next;
-            this.btnNextLeft.Location = new System.Drawing.Point(62, 33);
-            this.btnNextLeft.Name = "btnNextLeft";
-            this.btnNextLeft.Size = new System.Drawing.Size(31, 32);
-            this.btnNextLeft.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.btnNextLeft, "Navigate To The Next Logical Record With The View");
-            this.btnNextLeft.UseVisualStyleBackColor = true;
-            this.btnNextLeft.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // btnLastDown
-            // 
-            this.btnLastDown.BackgroundImage = global::LibraryApp.Properties.Resources.down;
-            this.btnLastDown.Location = new System.Drawing.Point(34, 63);
-            this.btnLastDown.Name = "btnLastDown";
-            this.btnLastDown.Size = new System.Drawing.Size(31, 32);
-            this.btnLastDown.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.btnLastDown, "Navigate To The Last Logical Record With The View");
-            this.btnLastDown.UseVisualStyleBackColor = true;
-            this.btnLastDown.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // btnFirstLeft
-            // 
-            this.btnFirstLeft.BackgroundImage = global::LibraryApp.Properties.Resources.up;
-            this.btnFirstLeft.Location = new System.Drawing.Point(34, 4);
-            this.btnFirstLeft.Name = "btnFirstLeft";
-            this.btnFirstLeft.Size = new System.Drawing.Size(31, 32);
-            this.btnFirstLeft.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.btnFirstLeft, "Navigate To The First Logical Record With The View");
-            this.btnFirstLeft.UseVisualStyleBackColor = true;
-            this.btnFirstLeft.Click += new System.EventHandler(this.Button1_Click_3);
-            // 
             // pnlNavigation
             // 
             this.pnlNavigation.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -1701,6 +1590,17 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 27);
             this.comboBox1.TabIndex = 34;
             this.comboBox1.Text = "Name";
+            // 
+            // lbTrace
+            // 
+            this.lbTrace.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrace.FormattingEnabled = true;
+            this.lbTrace.ItemHeight = 14;
+            this.lbTrace.Location = new System.Drawing.Point(906, 49);
+            this.lbTrace.Name = "lbTrace";
+            this.lbTrace.Size = new System.Drawing.Size(409, 564);
+            this.lbTrace.TabIndex = 45;
+            this.lbTrace.SelectedIndexChanged += new System.EventHandler(this.LbTrace_SelectedIndexChanged);
             // 
             // btnZ
             // 
@@ -1940,23 +1840,123 @@
             this.btnA.UseVisualStyleBackColor = true;
             this.btnA.Click += new System.EventHandler(this.Button1_Click_5);
             // 
-            // lbTrace
+            // btnPreviousRight
             // 
-            this.lbTrace.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTrace.FormattingEnabled = true;
-            this.lbTrace.ItemHeight = 14;
-            this.lbTrace.Location = new System.Drawing.Point(906, 49);
-            this.lbTrace.Name = "lbTrace";
-            this.lbTrace.Size = new System.Drawing.Size(409, 564);
-            this.lbTrace.TabIndex = 45;
-            this.lbTrace.SelectedIndexChanged += new System.EventHandler(this.LbTrace_SelectedIndexChanged);
+            this.btnPreviousRight.BackgroundImage = global::LibraryApp.Properties.Resources.previous1;
+            this.btnPreviousRight.Location = new System.Drawing.Point(809, 31);
+            this.btnPreviousRight.Name = "btnPreviousRight";
+            this.btnPreviousRight.Size = new System.Drawing.Size(31, 32);
+            this.btnPreviousRight.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.btnPreviousRight, "Navigate To The Previous Logical Record With The View");
+            this.btnPreviousRight.UseVisualStyleBackColor = true;
+            // 
+            // btnNextRight
+            // 
+            this.btnNextRight.BackgroundImage = global::LibraryApp.Properties.Resources.next;
+            this.btnNextRight.Location = new System.Drawing.Point(869, 31);
+            this.btnNextRight.Name = "btnNextRight";
+            this.btnNextRight.Size = new System.Drawing.Size(31, 32);
+            this.btnNextRight.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.btnNextRight, "Navigate To The Next Logical Record With The View");
+            this.btnNextRight.UseVisualStyleBackColor = true;
+            this.btnNextRight.Click += new System.EventHandler(this.BtnNextRight_Click);
+            // 
+            // btnLastRight
+            // 
+            this.btnLastRight.BackgroundImage = global::LibraryApp.Properties.Resources.down;
+            this.btnLastRight.Location = new System.Drawing.Point(839, 59);
+            this.btnLastRight.Name = "btnLastRight";
+            this.btnLastRight.Size = new System.Drawing.Size(31, 32);
+            this.btnLastRight.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.btnLastRight, "Navigate To The Last Logical Record With The View");
+            this.btnLastRight.UseVisualStyleBackColor = true;
+            // 
+            // btnFirstRight
+            // 
+            this.btnFirstRight.BackgroundImage = global::LibraryApp.Properties.Resources.up;
+            this.btnFirstRight.Location = new System.Drawing.Point(839, 3);
+            this.btnFirstRight.Name = "btnFirstRight";
+            this.btnFirstRight.Size = new System.Drawing.Size(31, 32);
+            this.btnFirstRight.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.btnFirstRight, "Navigate To The First Logical Record With The View");
+            this.btnFirstRight.UseVisualStyleBackColor = true;
+            // 
+            // btnPreviousLeft
+            // 
+            this.btnPreviousLeft.BackgroundImage = global::LibraryApp.Properties.Resources.previous1;
+            this.btnPreviousLeft.Location = new System.Drawing.Point(5, 33);
+            this.btnPreviousLeft.Name = "btnPreviousLeft";
+            this.btnPreviousLeft.Size = new System.Drawing.Size(31, 32);
+            this.btnPreviousLeft.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.btnPreviousLeft, "Navigate to the Previous Logical Record With The View");
+            this.btnPreviousLeft.UseVisualStyleBackColor = true;
+            this.btnPreviousLeft.Click += new System.EventHandler(this.BtnPreviousLeft_Click);
+            // 
+            // btnNextLeft
+            // 
+            this.btnNextLeft.BackgroundImage = global::LibraryApp.Properties.Resources.next;
+            this.btnNextLeft.Location = new System.Drawing.Point(62, 33);
+            this.btnNextLeft.Name = "btnNextLeft";
+            this.btnNextLeft.Size = new System.Drawing.Size(31, 32);
+            this.btnNextLeft.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.btnNextLeft, "Navigate To The Next Logical Record With The View");
+            this.btnNextLeft.UseVisualStyleBackColor = true;
+            this.btnNextLeft.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // btnLastDown
+            // 
+            this.btnLastDown.BackgroundImage = global::LibraryApp.Properties.Resources.down;
+            this.btnLastDown.Location = new System.Drawing.Point(34, 63);
+            this.btnLastDown.Name = "btnLastDown";
+            this.btnLastDown.Size = new System.Drawing.Size(31, 32);
+            this.btnLastDown.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btnLastDown, "Navigate To The Last Logical Record With The View");
+            this.btnLastDown.UseVisualStyleBackColor = true;
+            this.btnLastDown.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // btnFirstLeft
+            // 
+            this.btnFirstLeft.BackgroundImage = global::LibraryApp.Properties.Resources.up;
+            this.btnFirstLeft.Location = new System.Drawing.Point(34, 4);
+            this.btnFirstLeft.Name = "btnFirstLeft";
+            this.btnFirstLeft.Size = new System.Drawing.Size(31, 32);
+            this.btnFirstLeft.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.btnFirstLeft, "Navigate To The First Logical Record With The View");
+            this.btnFirstLeft.UseVisualStyleBackColor = true;
+            this.btnFirstLeft.Click += new System.EventHandler(this.Button1_Click_3);
+            // 
+            // btnCellPhone
+            // 
+            this.btnCellPhone.BackgroundImage = global::LibraryApp.Properties.Resources.phreal;
+            this.btnCellPhone.FlatAppearance.BorderSize = 0;
+            this.btnCellPhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCellPhone.Location = new System.Drawing.Point(756, 151);
+            this.btnCellPhone.Name = "btnCellPhone";
+            this.btnCellPhone.Size = new System.Drawing.Size(29, 30);
+            this.btnCellPhone.TabIndex = 44;
+            this.toolTip1.SetToolTip(this.btnCellPhone, "Dialing Cell Phone");
+            this.btnCellPhone.UseVisualStyleBackColor = true;
+            this.btnCellPhone.Click += new System.EventHandler(this.BtnCellPhone_Click_1);
+            // 
+            // btnHomePhone
+            // 
+            this.btnHomePhone.BackgroundImage = global::LibraryApp.Properties.Resources.phreal;
+            this.btnHomePhone.FlatAppearance.BorderSize = 0;
+            this.btnHomePhone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHomePhone.Location = new System.Drawing.Point(306, 153);
+            this.btnHomePhone.Name = "btnHomePhone";
+            this.btnHomePhone.Size = new System.Drawing.Size(29, 30);
+            this.btnHomePhone.TabIndex = 43;
+            this.toolTip1.SetToolTip(this.btnHomePhone, "Dialing Home Phone");
+            this.btnHomePhone.UseVisualStyleBackColor = true;
+            this.btnHomePhone.Click += new System.EventHandler(this.Button1_Click_2);
             // 
             // User
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(1322, 625);
+            this.ClientSize = new System.Drawing.Size(1484, 635);
             this.Controls.Add(this.lbTrace);
             this.Controls.Add(this.pnlNavigation);
             this.Controls.Add(this.tabControl1);
@@ -1968,7 +1968,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Library Application Written By Aaron Feleke";
+            this.Text = "Carnegie Vanguard High School Library Application";
             this.Load += new System.EventHandler(this.User_Load);
             this.VisibleChanged += new System.EventHandler(this.User_VisibleChanged);
             this.tabControl1.ResumeLayout(false);
