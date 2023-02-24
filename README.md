@@ -1,5 +1,5 @@
 # High-School-Library-Application
-Using C#, this prototype includes many features including check out, email reminders, and much more. 
+Using C#, this proeject includes many features including check out, email reminders, and much more. 
 
 Sleak Navigation. <br />
 ![LL](QuiickLink.png)
